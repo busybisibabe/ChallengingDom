@@ -4,6 +4,7 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Text;
+using SixLabors.ImageSharp.ColorSpaces;
 
 namespace ChallengingDom.PageObject
 {
@@ -29,6 +30,9 @@ namespace ChallengingDom.PageObject
         private By delete = By.CssSelector("body > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(7) > a:nth-child(2)");
         private By delete9 = By.XPath("//*[@id='content']/div/div/div/div[2]/table/tbody/tr[10]/td[7]/a[2]");
         private By tableRow = By.XPath("//*[@id='content']/div/div/div/div[2]/table/tbody");
+        private By button = By.XPath("//*[@id='144f4400 - d515 - 013a - a560 - 12a432012d88']");
+        private By buttonAlert = By.XPath("//*[@id='144f5d60 - d515 - 013a - a561 - 12a432012d88']");
+        private By buttonSuccess = By.XPath("//*[@id='144f7190 - d515 - 013a - a562 - 12a432012d88']");
         public void NavigateToWebsite(string url)
         {
             driver.Navigate().GoToUrl(url);
@@ -80,7 +84,15 @@ namespace ChallengingDom.PageObject
             driver.FindElement(blue).Click();
         }
 
-        
-
+        //public bool ThreeButtonDisplayed()
+        //{
+        //    return driver.GetType(blue, red, green);
+        //}
+        //public void RowCount()
+        //{
+        //    List<WebElement> rowsNumber = driver.FindElements(tableRow)
+        //    int rowCount = rowsNumber.size();
+        //}
+            
     }
 }

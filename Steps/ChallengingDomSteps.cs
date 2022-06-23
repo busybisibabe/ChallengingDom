@@ -48,10 +48,10 @@ namespace ChallengingDom.Steps
         }
 
         [When(@"I count the numbers of rows")]
-        public void WhenICountTheNumbersOfRows()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //public void WhenICountTheNumbersOfRows()
+        //{
+        //    ChallengingDomSteps.WhenICountTheNumbersOfRows();
+        //}
 
         [Then(@"I should see ten rows on the table")]
         public void ThenIShouldSeeTenRowsOnTheTable()
@@ -114,7 +114,6 @@ namespace ChallengingDom.Steps
         {
             ScenarioContext.Current.Pending();
         }
-
-
+       
     }
 }

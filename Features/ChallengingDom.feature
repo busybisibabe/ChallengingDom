@@ -52,4 +52,7 @@ Scenario: Invalid - Verify that the table has no column
     When I count the numbers of column
     Then I should see seven column on the table
 
+#@testcase10
+#Scenario: Valid
+
 

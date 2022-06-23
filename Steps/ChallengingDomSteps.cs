@@ -103,6 +103,18 @@ namespace ChallengingDom.Steps
             ScenarioContext.Current.Pending();
         }
 
+        [When(@"I count the numbers of column")]
+        public void WhenICountTheNumbersOfColumn()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"I should see seven column on the table")]
+        public void ThenIShouldSeeSevenColumnOnTheTable()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
 
     }
 }

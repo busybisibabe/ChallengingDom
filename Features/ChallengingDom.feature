@@ -41,7 +41,15 @@ Scenario: Verify Web page has three buttons
 Scenario: Valid - Verify that the table has 10rows
     When I count the numbers of rows
     Then I should see ten rows on the table
-   
+  
+@testcase8
+Scenario: Valid - Verify that the table has 7column
+    When I count the numbers of column
+    Then I should see seven column on the table
 
+@testcase9
+Scenario: Invalid - Verify that the table has no column
+    When I count the numbers of column
+    Then I should see seven column on the table
 
 

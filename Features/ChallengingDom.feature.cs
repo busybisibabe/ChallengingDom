@@ -163,14 +163,14 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valid - Verify that the delete is clickable", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Invalid - Verify that the edit is not clickable", new string[] {
                 "testcase3"}, SourceLine=20)]
-        public virtual void Valid_VerifyThatTheDeleteIsClickable()
+        public virtual void Invalid_VerifyThatTheEditIsNotClickable()
         {
             string[] tagsOfScenario = new string[] {
                     "testcase3"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid - Verify that the delete is clickable", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid - Verify that the edit is not clickable", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -198,20 +198,20 @@ this.FeatureBackground();
     testRunner.When("I click on delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 23
-    testRunner.Then("it should be clickable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("it should  be not clickable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Verify Web page has three buttons", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Valid - Verify that the delete is clickable", new string[] {
                 "testcase4"}, SourceLine=25)]
-        public virtual void VerifyWebPageHasThreeButtons()
+        public virtual void Valid_VerifyThatTheDeleteIsClickable()
         {
             string[] tagsOfScenario = new string[] {
                     "testcase4"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Web page has three buttons", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid - Verify that the delete is clickable", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 26
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -236,22 +236,24 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 27
-    testRunner.Then("three buttons should be visible on the webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.When("I click on delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 28
-    testRunner.And("the colour should be red,blue and green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Then("it should be clickable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valid - Verify that the table has", SourceLine=28)]
-        public virtual void Valid_VerifyThatTheTableHas()
+        [TechTalk.SpecRun.ScenarioAttribute("Invalid - Verify that the delete is not clickable", new string[] {
+                "testcase5"}, SourceLine=30)]
+        public virtual void Invalid_VerifyThatTheDeleteIsNotClickable()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "testcase5"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid - Verify that the table has", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 29
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Invalid - Verify that the delete is not clickable", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -273,6 +275,94 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 6
 this.FeatureBackground();
+#line hidden
+#line 32
+    testRunner.When("I click on delete", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 33
+    testRunner.Then("it should  be not clickable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Verify Web page has three buttons", new string[] {
+                "testcase6"}, SourceLine=35)]
+        public virtual void VerifyWebPageHasThreeButtons()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "testcase6"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Web page has three buttons", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 36
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 37
+    testRunner.Then("three buttons should be visible on the webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 38
+    testRunner.And("the colour should be red,blue and green", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Valid - Verify that the table has 10rows", new string[] {
+                "testcase7"}, SourceLine=40)]
+        public virtual void Valid_VerifyThatTheTableHas10Rows()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "testcase7"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid - Verify that the table has 10rows", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 41
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line hidden
+#line 42
+    testRunner.When("I count the numbers of rows", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 43
+    testRunner.Then("I should see ten rows on the table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

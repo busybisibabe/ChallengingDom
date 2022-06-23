@@ -1,5 +1,6 @@
 ﻿using ChallengingDom.PageObject;
 using FluentAssertions;
+using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
 
@@ -40,6 +41,24 @@ namespace ChallengingDom.Steps
             challengingDomPage.IsTheUserRedirectedToEditPage().Should().BeFalse();
         }
 
+        [Then(@"it should  be not clickable")]
+        public void ThenItShouldBeNotClickable()
+        {
+            challengingDomPage.IsUserOnTheLandingPage().Should().BeTrue();
+        }
+
+        [When(@"I count the numbers of rows")]
+        public void WhenICountTheNumbersOfRows()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"I should see ten rows on the table")]
+        public void ThenIShouldSeeTenRowsOnTheTable()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
         //[Then(@"I should be not be redirected")]
         //public void ThenIShouldBeNotBeRedirected()
         //{
@@ -52,11 +71,12 @@ namespace ChallengingDom.Steps
             challengingDomPage.ClickBlueButton();
         }
 
-        [Then(@"the Blue ButtonID should change after clicking")]
-        public void ThenTheBlueButtonIDShouldChangeAfterClicking()
-        {
-            ScenarioContext.Current.Pending();
-        }
+        //[Then(@"the Blue ButtonID should change after clicking")]
+        //public void ThenTheBlueButtonIDShouldChangeAfterClicking()
+        //{
+        //    Assert.assertTrue(challengingDOM.clickOnBlueButton());
+
+        //}
 
 
         [When(@"I click on delete")]
@@ -74,7 +94,7 @@ namespace ChallengingDom.Steps
         [Then(@"three buttons should be visible on the webpage")]
         public void ThenThreeButtonsShouldBeVisibleOnTheWebpage()
         {
-            ScenarioContext.Current.Pending();
+            challengingDomPage.IsThreeButtonVisibleOnThePage().Should().BeTrue();
         }
 
         [Then(@"the colour should be red,blue and green")]
